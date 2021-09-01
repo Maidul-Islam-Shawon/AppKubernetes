@@ -1,0 +1,13 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    app: web
+
+spec:
+  containers:
+    - name: web-ctr
+      image: maidulshawon/appkubernetes:1.0.0
+      ports:
+        - containerPort: 80
